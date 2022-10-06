@@ -32,6 +32,7 @@ function NavBar() {
           WatchList
         </a>
       </button>
+      <div></div>
     </nav>
   );
 }
