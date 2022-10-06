@@ -1,42 +1,29 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-
+import React from "react";
+import { Link } from "react-router-dom";
 
 function NavBar() {
-    function handleClick(){
 
-    }
 
   return (
     <nav>
       <button>
-        <a onClick={handleClick} href="/">
-          Home
-        </a>
+        <Link to="/">Home</Link>
       </button>
       <button>
-        <a onClick={handleClick} href="/">
-          Movies
-        </a>
+        <Link to="/movies">Movies</Link>
       </button>
       <button>
-        <a onClick={handleClick} href="/">
-          Series
-        </a>
+        <Link to="/series">Series</Link>
       </button>
       <button>
-        <a onClick={handleClick} href="/">
-          Documentaries
-        </a>
+        <Link to="/documentaries">Documentaries</Link>
       </button>
       <button>
-        <a onClick={handleClick} href="/">
-          WatchList
-        </a>
+        <Link to="/watchlist">WatchList</Link>
       </button>
       <div></div>
     </nav>
   );
 }
 
-export default NavBar
+export default NavBar;
