@@ -1,9 +1,22 @@
-import React from 'react'
+import React from "react";
+import ListItems from "./ListItems";
+import Logo from "./Logo";
+import Search from "./Search";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import GenreSearch from "./GenreSearch";
 
-const Series = () => {
+function Series(){
   return (
-    <div>Series</div>
-  )
-}
+    <div>
+      <Logo />
+      <Search />
+      <Navbar />
+      <GenreSearch />
+      <ListItems />
+      <Footer />
+    </div>
+  );
+};
 
-export default Series
+export default Series;

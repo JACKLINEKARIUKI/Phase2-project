@@ -1,9 +1,23 @@
-import React from 'react'
+import React from "react";
+import ListItems from "./ListItems";
+import Logo from "./Logo";
+import Search from "./Search";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import GenreSearch from "./GenreSearch";
+import MyListItems from "./MyListItems";
 
-const WatchList = () => {
+function WatchList(){
   return (
-    <div>WatchList</div>
-  )
-}
+    <div>
+      <Logo />
+      <Search />
+      <Navbar />
+      <MyListItems />
+      <Footer />
+    </div>
+  );
+};
+
 
 export default WatchList

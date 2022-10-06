@@ -9,14 +9,14 @@ function MostPopularList({popularMovies}) {
       </div>
       <div>
         <div>
-          {popularMovies.map((movie) => (
+          {/* {popularMovies.map((movie) => (
             <img src={movie.i.Url} alt="pic" key={movie.id} />
-          ))}
+          ))} */}
         </div>
         <div>
-          {popularMovies.map((movie) => (
+          {/* {popularMovies.map((movie) => (
             <img src={movie.i.Url} alt="pic" key={movie.id} />
-          ))}
+          ))} */}
         </div>
       </div>
     </div>

@@ -9,9 +9,9 @@ function PopularReviews({reviews}) {
         <h3>More</h3>
       </div>
       <div>
-        {reviews.map((review) => (
+        {/* {reviews.map((review) => (
           <Review review={review} key={review} />
-        ))}
+        ))} */}
       </div>
     </div>
   );

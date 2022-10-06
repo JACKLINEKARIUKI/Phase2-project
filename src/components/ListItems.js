@@ -4,9 +4,9 @@ import MovieCard from "./MovieCard";
 function ListItems({ items }) {
     return (
         <div>
-        {items.map((item) => (
+        {/* {items.map((item) => (
             <MovieCard key={item.id} />
-        ))}
+        ))} */}
         </div>
     );
     }

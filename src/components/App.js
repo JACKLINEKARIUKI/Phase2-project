@@ -1,15 +1,18 @@
 import React from 'react';
 import { Route, Switch } from "react-router-dom";
+import './assets/App.css';
 import Home from './Home';
 import Movies from "./Movies";
 import Series from "./Series";
 import Documentaries from "./Documentaries";
 import WatchList from "./WatchList";
+import Login from './Login';
+import SignUp from './SignUp';
 
 
 function App() {
   return (
-    <div>
+    <div >
       <Switch>
         <Route exact path="/movies">
           <Movies />
@@ -22,6 +25,12 @@ function App() {
         </Route>
         <Route exact path="/watchlist">
           <WatchList />
+        </Route>
+        <Route exact path="/login">
+          <Login />
+        </Route>
+        <Route exact path="/signup">
+          <SignUp />
         </Route>
         <Route exact path="/">
           <Home />
