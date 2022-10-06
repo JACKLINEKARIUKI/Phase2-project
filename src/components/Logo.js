@@ -14,7 +14,7 @@ const logo = {
   fontFamily: "Tangerine",
   marginTop: "10px",
   marginBottom: "0px",
-  marginLeft: "0px",
+  marginLeft: "10px",
   paddingTop: "5px",
 };
 

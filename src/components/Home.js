@@ -9,18 +9,30 @@ import Footer from './Footer'
 
 
 function Home() {
-  
+  // const [films, setFilms] = useState([]);
+
+  // useEffect(() => {
+  //   fetch("http://localhost:8000/d")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       console.log(data);
+  //     });
+
   return (
     <div>
       <Logo />
       <Search />
       <Navbar />
-      <ListItems />
-      <PopularReviews />
-      <MostPopularList />
+      <div>
+        <ListItems />
+        <div>
+          <PopularReviews />
+          <MostPopularList />
+        </div>
+      </div>
       <Footer />
     </div>
-  )
+  );
 }
 
 export default Home
