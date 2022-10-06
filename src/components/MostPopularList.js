@@ -4,7 +4,7 @@ function MostPopularList({popularMovies}) {
   return (
     <div>
       <div>
-        <h3>Most Popular List</h3>
+        <h3>Popular List</h3>
         <h3>More</h3>
       </div>
       <div>
