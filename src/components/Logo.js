@@ -6,10 +6,17 @@ const logoStyle = {
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  fontSize: "30px",
+}
+
+const logo = {
+  fontSize: "80px",
   fontWeight: "bold",
   fontFamily: "Tangerine",
-}
+  marginTop: "10px",
+  marginBottom: "0px",
+  marginLeft: "0px",
+  paddingTop: "5px",
+};
 
 
 const buttonStyle = {
@@ -27,7 +34,7 @@ const buttonStyle = {
 function Logo() {
   return (
     <div style={logoStyle}>
-      <h1>WatchTower</h1>
+      <h1 style={logo}>WatchTower</h1>
       <div>
         <button style={buttonStyle}>
           <Link to="/login">Login</Link>
