@@ -17,9 +17,9 @@ This is a book store website where one can easily view the genre of books they w
 
 # Set Up Instruction and Installation
 * Run the following to activate the development environment  
-    * Yarn run json-server --watch db.json
-    * Open [http://localhost:3000](http://localhost:3000)
-    * Open application "yarn start"
+1. Yarn run json-server --watch db.json
+2. Open [http://localhost:3000](http://localhost:3000)
+3. Open application "yarn start"
 
 * Access to a computer, tablet, Ipad or smart phone.
 * Internet
@@ -28,7 +28,7 @@ This is a book store website where one can easily view the genre of books they w
 # Link
 * Here is the link to the application on github (https://jacklinekariuki.github.io/phase2-project/)
 
-* Here is the link to the deployed application on Heroku ()
+* Here is the link to the deployed application on Heroku (https://phase2-project-app.herokuapp.com/)
 
 # Technology Used
 * React JS.
