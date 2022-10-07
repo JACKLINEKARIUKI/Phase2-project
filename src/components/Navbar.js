@@ -3,8 +3,11 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   const navLinks = {
-    padding: "5px 45px",
-    margin: "0px",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    width: "19%",
+    padding: "0.4vh 7vw",
     borderRadius: "3px",
     border: "1px solid white",
     color: "white",
@@ -13,6 +16,7 @@ function Navbar() {
     fontWeight: "bold",
     cursor: "pointer",
     textDecoration: "none",
+    textAlign: "center",
   };
 
   const navbar = {
