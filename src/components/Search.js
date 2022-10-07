@@ -1,28 +1,28 @@
 import React from "react";
 
+const searchBar = {
+  display: "flex",
+  justifyContent: "right",
+};
+
+const input = {
+  background: "rgba(255, 255, 255, 0.2)",
+  border: "1px solid rgba(255, 255, 255, 0.5)",
+  color: "#D9D9D9",
+  margin: "2px",
+  padding: "5px",
+  marginBottom: "30px",
+  fontSize: "15px",
+};
+
+const options = {
+  background: "rgba(255, 255, 255, 0.2)",
+  border: "1px solid rgba(255, 255, 255, 0.5)",
+  color: "black",
+  fontSize: "15px",
+};
+
 function Search() {
-  const searchBar = {
-    display: "flex",
-    justifyContent: "right",
-  };
-
-  const input = {
-    background: "rgba(255, 255, 255, 0.2)",
-    border: "1px solid rgba(255, 255, 255, 0.5)",
-    color: "#D9D9D9",
-    margin: "2px",
-    padding: "5px",
-    marginBottom: "30px",
-    fontSize: "15px",
-  };
-
-  const options = {
-    background: "rgba(255, 255, 255, 0.2)",
-    border: "1px solid rgba(255, 255, 255, 0.5)",
-    color: "black",
-    fontSize: "15px",
-  };
-
   function handleSearch() {
     console.log("searching");
   }

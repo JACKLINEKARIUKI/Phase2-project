@@ -12,8 +12,6 @@ import { useFilmsContext } from "../Context/Films";
 import CardDetails from "./CardDetails";
 
 function App() {
-  // const [watchList, setWatchList] = useState([]);
-  // const [user, setUser] = useState(null);
 
   const {filterFilms, allFilms} = useFilmsContext()
 
@@ -38,7 +36,7 @@ function App() {
         <Route exact path="/signup">
           <SignUp />
         </Route>
-        <Route exact path="/cardDetails">
+        <Route exact path="/:film_id">
           <CardDetails />
         </Route>
         <Route exact path="/">

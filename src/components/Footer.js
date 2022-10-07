@@ -7,7 +7,6 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
-function Footer() {
   const footerRowLinks = {
     display: "flex",
     justifyContent: "space-between",
@@ -33,9 +32,12 @@ function Footer() {
     marginTop: "10px",
   };
 
-  const copyright={
+  const copyright = {
     textAlign: "center",
-  }
+  };
+  
+function Footer() {
+
 
   return (
     <div>

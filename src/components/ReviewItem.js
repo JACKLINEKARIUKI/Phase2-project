@@ -1,26 +1,24 @@
 import React from "react";
 import { useState } from "react";
 
+const input1 = {
+  padding: "0.5em 0.5em 0.5em 0.5em",
+  width: "20%",
+};
+const input2 = {
+  padding: "0.5em 0.5em 0.5em 0.5em",
+  width: "45%",
+};
+const button = {
+  padding: "0.5em 0.5em 0.5em 0.5em",
+};
+
 function ReviewItem({ addReview }) {
-
-  const input1 = {
-    padding: "0.5em 0.5em 0.5em 0.5em",
-    width: "20%",
-  };
-  const input2 = {
-    padding: "0.5em 0.5em 0.5em 0.5em",
-    width: "65%",
-  };
-  const button = {
-    padding: "0.5em 0.5em 0.5em 0.5em",
-  };
-
-
   const [formData, setFormData] = useState({
     title: "",
     comment: "",
   });
-  
+
   function handleChange(e) {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   }

@@ -2,26 +2,20 @@ import React from "react";
 import Reviews from "./Reviews";
 import FilmList from "./FilmList";
 import Header from "./Header";
-// import Logo from "./Logo";
-// import Search from "./Search";
-// import Navbar from "./Navbar";
 import Footer from "./Footer";
 
+const homePageColumns = {
+  display: "flex",
+  justifyContent: "space-between",
+};
+
+const filmListStyle = {
+  display: "grid",
+  gridTemplateColumns: "repeat(5, 1fr)",
+  gridGap: "2em",
+};
+
 function Home({ films }) {
-  const homePageColumns = {
-    display: "flex",
-    justifyContent: "space-between",
-  };
-  const homePageRows = {
-    display: "block",
-    flexDirection: "row",
-    alignItems: "center",
-  };
-  const filmListStyle = {
-    display: "grid",
-    gridTemplateColumns: "repeat(3, 1fr)",
-    gridGap: "2em",
-  };
   return (
     <div>
       <Header />
@@ -29,9 +23,7 @@ function Home({ films }) {
         <div>
           <FilmList films={films} listStyle={filmListStyle} />
         </div>
-        <div>
-          <Reviews style={homePageRows} />
-        </div>
+      
       </div>
       <Footer />
     </div>
