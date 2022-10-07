@@ -11,7 +11,6 @@ const moviesListStyle = {
 };
 
 function Movies({ movies }) {
-  const [searchResults, setSearchResults] = useState([]);
   const [genre, setGenre] = useState("All");
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -27,7 +26,7 @@ function Movies({ movies }) {
 
   return (
     <div>
-      <Header films={movies} setSearchResults={setSearchResults} />
+      <Header setSearchTerm={setSearchTerm} />
       <GenreSearch setGenre={setGenre} />
       <div>
         <div>

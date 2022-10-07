@@ -22,7 +22,7 @@ function WatchList() {
 
   return (
     <div>
-      <Header />
+      <Header noSearch={true} />
       <FilmList films={watchList} listStyle={watchListStyle} />
       <Footer />
     </div>

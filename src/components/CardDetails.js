@@ -81,7 +81,7 @@ function CardDetails() {
 
   return (
     <div>
-      <Header />
+      <Header noSearch />
       <div>
         <div>
           <div style={columnDetails}>

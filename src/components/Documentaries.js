@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo, useState } from "react";
 import Header from "./Header";
 import FilmList from "./FilmList";
 
@@ -12,13 +12,24 @@ const documentariesListStyle = {
 };
 
 function Documentaries({ documentaries }) {
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const filmList = useMemo(
+    () =>
+      searchTerm.length
+        ? documentaries.filter((film) =>
+            film.l.toLowerCase().includes(searchTerm.toLowerCase())
+          )
+        : documentaries,
+    [documentaries, searchTerm]
+  );
   return (
     <div>
-      <Header />
+      <Header setSearchTerm={setSearchTerm} /> <GenreSearch />
       <GenreSearch />
       <div>
         <div>
-          <FilmList films={documentaries} listStyle={documentariesListStyle} />
+          <FilmList films={filmList} listStyle={documentariesListStyle} />
         </div>
       </div>
       <Footer />

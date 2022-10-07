@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import Header from "./Header";
 import FilmList from "./FilmList";
 import Footer from "./Footer";
@@ -11,15 +11,23 @@ const seriesListStyle = {
 };
 
 function Series({ series }) {
-    const [searchResults, setSearchResults] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
+  const filmList = useMemo(
+    () =>
+      searchTerm.length
+        ? series.filter((film) =>
+            film.l.toLowerCase().includes(searchTerm.toLowerCase())
+          )
+        : series,
+    [series, searchTerm]
+  );
   return (
     <div>
-      <Header films={series} setSearchResults={setSearchResults} />
-      <GenreSearch />
+      <Header setSearchTerm={setSearchTerm} /> <GenreSearch />
       <div>
         <div>
-          <FilmList films={series} listStyle={seriesListStyle} />
+          <FilmList films={filmList} listStyle={seriesListStyle} />
         </div>
       </div>
       <Footer />
