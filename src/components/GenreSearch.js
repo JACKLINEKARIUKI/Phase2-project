@@ -31,7 +31,7 @@ function GenreSearch() {
 
   return (
     <div style={genreStyle}>
-      <select name="" id="" onChange={handleSearch} style={input}>
+      <select name="genre" id="genre" onChange={handleSearch} style={input}>
         <option value="" style={options}></option>
         <option value="action" style={options}>
           Action
