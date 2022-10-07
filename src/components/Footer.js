@@ -13,7 +13,7 @@ function Footer() {
     justifyContent: "space-between",
     alignItems: "center",
     padding: "10px 10px",
-    margin: "0px",
+    margin: "20px 0px 0px 0px",
     backgroundColor: "rgba(94, 151, 255, 0.4)",
   };
   const icons = {
