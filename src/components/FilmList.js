@@ -1,7 +1,7 @@
 import React from "react";
 import FilmCard from "./FilmCard";
 
-function FilmList({ films, listStyle }) {
+function FilmList({ films, listStyle, searchResults }) {
 
 
   return (

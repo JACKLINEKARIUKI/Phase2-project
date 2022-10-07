@@ -13,7 +13,7 @@
 
 # Description
 
-This is a book store website where one can easily view the genre of books they would like to see, select the books they would like to read and add them to the wish list as well as upload books onto the website.
+This is a movies and series application wherein the user is able to view available movies/series and select those that they want to watch directly or add to their watch list.
 
 # Set Up Instruction and Installation
 * Run the following to activate the development environment  
@@ -21,9 +21,6 @@ This is a book store website where one can easily view the genre of books they w
 2. Open [http://localhost:3000](http://localhost:3000)
 3. Open application "yarn start"
 
-* Access to a computer, tablet, Ipad or smart phone.
-* Internet
-* website link.
 
 # Link
 * Here is the link to the application on github (https://jacklinekariuki.github.io/phase2-project/)

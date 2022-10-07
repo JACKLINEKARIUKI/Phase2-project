@@ -11,9 +11,11 @@ const seriesListStyle = {
 };
 
 function Series({ series }) {
+    const [searchResults, setSearchResults] = useState([]);
+
   return (
     <div>
-      <Header />
+      <Header films={series} setSearchResults={setSearchResults} />
       <GenreSearch />
       <div>
         <div>

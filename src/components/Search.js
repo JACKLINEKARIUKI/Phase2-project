@@ -1,4 +1,6 @@
 import React from "react";
+import { useState } from "react";
+import { useCallback } from "react";
 
 const searchBar = {
   display: "flex",
@@ -22,9 +24,16 @@ const options = {
   fontSize: "15px",
 };
 
-function Search() {
-  function handleSearch() {
-    console.log("searching");
+function Search({  setSearchTerm }) {
+  const [searchTerm, setSearch] = useState("");
+
+  const handleChange = useCallback((event) => {
+    setSearch(event.target.value);
+  }, []);
+
+  function handleSearch(e) {
+    e.preventDefault();
+    setSearchTerm(searchTerm);
   }
 
   return (
@@ -33,20 +42,10 @@ function Search() {
         type="text"
         name="search"
         placeholder="keyword/title"
+        value={searchTerm}
         style={input}
+        onChange={handleChange}
       />
-      <select name="categories" id="categories" style={input}>
-        <option value="" style={options}></option>
-        <option value="movie" style={options}>
-          Movie
-        </option>
-        <option value="series" style={options}>
-          Series
-        </option>
-        <option value="episode" style={options}>
-          Documentary
-        </option>
-      </select>
       <button onClick={handleSearch} style={input}>
         Search
       </button>

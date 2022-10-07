@@ -3,11 +3,11 @@ import Logo from "./Logo";
 import Search from "./Search";
 import Navbar from "./Navbar";
 
-function Header() {
+function Header({setSearchTerm }) {
   return (
     <div>
       <Logo />
-      <Search />
+      <Search setSearchTerm={setSearchTerm} />
       <Navbar />
     </div>
   );

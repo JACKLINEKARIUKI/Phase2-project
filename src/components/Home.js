@@ -1,5 +1,4 @@
-import React from "react";
-import Reviews from "./Reviews";
+import React, { useMemo, useState } from "react";
 import FilmList from "./FilmList";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -16,14 +15,25 @@ const filmListStyle = {
 };
 
 function Home({ films }) {
+  const [searchTerm, setSearchTerm] = useState('');
+  
+  const filmList = useMemo(
+    () =>
+      searchTerm.length
+        ? films.filter((film) =>
+            film.l.toLowerCase().includes(searchTerm.toLowerCase())
+          )
+        : films,
+    [films, searchTerm]
+  );
+
   return (
     <div>
-      <Header />
+      <Header setSearchTerm={setSearchTerm} />
       <div style={homePageColumns}>
         <div>
-          <FilmList films={films} listStyle={filmListStyle} />
+          <FilmList films={filmList} listStyle={filmListStyle} />
         </div>
-      
       </div>
       <Footer />
     </div>

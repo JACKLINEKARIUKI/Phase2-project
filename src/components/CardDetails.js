@@ -4,16 +4,10 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Reviews from "./Reviews";
 
-const homePageRows = {
-  display: "block",
-  flexDirection: "row",
-  alignItems: "center",
-};
 
 const columnDetails = {
   display: "flex",
   justifyContent: "space-between",
-  // backgroundColor: "rgba(94, 151, 255, 0.4)",
   padding: "1vw 15vw 0vw 2vw",
   margin: "0px 0px 30px 0px",
 };

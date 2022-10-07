@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useMemo  } from "react";
 import Header from "./Header";
 import FilmList from "./FilmList";
 import Footer from "./Footer";
@@ -11,22 +11,27 @@ const moviesListStyle = {
 };
 
 function Movies({ movies }) {
-  const [moviesList, setMoviesList] = useState(movies);
+  const [searchResults, setSearchResults] = useState([]);
   const [genre, setGenre] = useState("All");
-  // const [search, setSearch] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
 
-  // const filterMovies = (e) => {
-  //   const filteredMovies = films.filter((film) => {
-  //     return film.qid === e.target.value;
-  //   });
+  const filmList = useMemo(
+    () =>
+      searchTerm.length
+        ? movies.filter((film) =>
+            film.l.toLowerCase().includes(searchTerm.toLowerCase())
+          )
+        : movies,
+    [movies, searchTerm]
+  );
 
   return (
     <div>
-      <Header />
+      <Header films={movies} setSearchResults={setSearchResults} />
       <GenreSearch setGenre={setGenre} />
       <div>
         <div>
-          <FilmList films={movies} listStyle={moviesListStyle} />
+          <FilmList films={filmList} listStyle={moviesListStyle} />
         </div>
       </div>
       <Footer />
