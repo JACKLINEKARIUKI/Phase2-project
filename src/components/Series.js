@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SeriesList from "./SeriesList";
+import FilmList from "./FilmList";
 import Logo from "./Logo";
 import Search from "./Search";
 import Navbar from "./Navbar";
@@ -7,7 +7,12 @@ import Footer from "./Footer";
 import GenreSearch from "./GenreSearch";
 
 function Series({ series }) {
-  console.log(series)
+  const seriesListStyle = {
+    display: "grid",
+    gridTemplateColumns: "repeat(5, 1fr)",
+    gridGap: "1.9em",
+  };
+
   return (
     <div>
       <Logo />
@@ -16,7 +21,7 @@ function Series({ series }) {
       <GenreSearch />
       <div>
         <div>
-          <SeriesList series={series} />
+          <FilmList films={series} listStyle={seriesListStyle}/>
         </div>
       </div>
       <Footer />

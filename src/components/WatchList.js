@@ -1,5 +1,5 @@
 import React from "react";
-import ListItems from "./ListItems";
+import ListItems from "./FilmList";
 import Logo from "./Logo";
 import Search from "./Search";
 import Navbar from "./Navbar";

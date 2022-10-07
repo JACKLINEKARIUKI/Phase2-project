@@ -1,14 +1,13 @@
 import React from "react";
 import MostPopularList from "./MostPopularList";
 import Reviews from "./Reviews";
-import ListItems from "./ListItems";
+import FilmList from "./FilmList";
 import Logo from "./Logo";
 import Search from "./Search";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 function Home({ films }) {
-
   const homePageColumns = {
     display: "flex",
     justifyContent: "space-between",
@@ -18,11 +17,11 @@ function Home({ films }) {
     flexDirection: "row",
     alignItems: "center",
   };
-  // const headers = {
-  //   color: "white",
-  //   fontSize: "20px",
-  //   padding: "0px 5px",
-  // }
+  const filmListStyle = {
+    display: "grid",
+    gridTemplateColumns: "repeat(3, 1fr)",
+    gridGap: "2em",
+  };
   return (
     <div>
       <Logo />
@@ -30,7 +29,7 @@ function Home({ films }) {
       <Navbar />
       <div style={homePageColumns}>
         <div>
-          <ListItems films={films} />
+          <FilmList films={films} listStyle={filmListStyle}/>
         </div>
         <div>
           <Reviews style={homePageRows} />

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MoviesList from "./MoviesList";
+import FilmList from "./FilmList";
 import Logo from "./Logo";
 import Search from "./Search";
 import Navbar from "./Navbar";
@@ -7,6 +7,12 @@ import Footer from "./Footer";
 import GenreSearch from "./GenreSearch";
 
 function Movies({ movies }) {
+  const moviesListStyle = {
+    display: "grid",
+    gridTemplateColumns: "repeat(5, 1fr)",
+    gridGap: "1.9em",
+  };
+
   // const [movies, setMovies] = useState(films);
   const [genre, setGenre] = useState("All");
   const [search, setSearch] = useState("");
@@ -23,7 +29,7 @@ function Movies({ movies }) {
       <GenreSearch />
       <div>
         <div>
-          <MoviesList movies={movies} />
+          <FilmList films={movies} listStyle={moviesListStyle} />
         </div>
       </div>
       <Footer />

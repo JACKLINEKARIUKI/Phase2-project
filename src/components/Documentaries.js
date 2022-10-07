@@ -1,19 +1,29 @@
 import React from "react";
-import ListItems from "./ListItems";
+import FilmList from "./FilmList";
 import Logo from "./Logo";
 import Search from "./Search";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import GenreSearch from "./GenreSearch";
 
-function Documentaries(){
-  return (
+function Documentaries({documentaries}){
+    const documentariesListStyle = {
+    display: "grid",
+    gridTemplateColumns: "repeat(5, 1fr)",
+    gridGap: "1.9em",
+  };
+
+   return (
     <div>
       <Logo />
       <Search />
       <Navbar />
       <GenreSearch />
-      <ListItems />
+      <div>
+        <div>
+          <FilmList films={documentaries} listStyle={documentariesListStyle}/>
+        </div>
+      </div>
       <Footer />
     </div>
   );

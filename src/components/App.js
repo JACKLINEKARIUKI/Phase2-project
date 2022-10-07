@@ -23,10 +23,10 @@ function App() {
           <Movies movies={filterFilms("movie")} />
         </Route>
         <Route exact path="/series">
-          <Series series={filterFilms("tvseries")} />
+          <Series series={filterFilms("tvSeries")} />
         </Route>
         <Route exact path="/documentaries">
-          <Documentaries />
+          <Documentaries documentaries={filterFilms("documentary")}/>
         </Route>
         <Route exact path="/watchlist">
           <WatchList />
