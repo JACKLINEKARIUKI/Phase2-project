@@ -1,8 +1,6 @@
 import React, { useState } from "react";
+import Header from "./Header";
 import FilmList from "./FilmList";
-import Logo from "./Logo";
-import Search from "./Search";
-import Navbar from "./Navbar";
 import Footer from "./Footer";
 import GenreSearch from "./GenreSearch";
 
@@ -23,9 +21,7 @@ function Movies({ movies }) {
 
   return (
     <div>
-      <Logo />
-      <Search />
-      <Navbar />
+      <Header />
       <GenreSearch />
       <div>
         <div>

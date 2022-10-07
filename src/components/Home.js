@@ -2,9 +2,10 @@ import React from "react";
 import MostPopularList from "./MostPopularList";
 import Reviews from "./Reviews";
 import FilmList from "./FilmList";
-import Logo from "./Logo";
-import Search from "./Search";
-import Navbar from "./Navbar";
+import Header from "./Header";
+// import Logo from "./Logo";
+// import Search from "./Search";
+// import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 function Home({ films }) {
@@ -24,12 +25,10 @@ function Home({ films }) {
   };
   return (
     <div>
-      <Logo />
-      <Search />
-      <Navbar />
+      <Header />
       <div style={homePageColumns}>
         <div>
-          <FilmList films={films} listStyle={filmListStyle}/>
+          <FilmList films={films} listStyle={filmListStyle} />
         </div>
         <div>
           <Reviews style={homePageRows} />

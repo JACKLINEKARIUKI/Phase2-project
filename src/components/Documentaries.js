@@ -1,8 +1,7 @@
 import React from "react";
+import Header from "./Header";
 import FilmList from "./FilmList";
-import Logo from "./Logo";
-import Search from "./Search";
-import Navbar from "./Navbar";
+
 import Footer from "./Footer";
 import GenreSearch from "./GenreSearch";
 
@@ -15,9 +14,7 @@ function Documentaries({documentaries}){
 
    return (
     <div>
-      <Logo />
-      <Search />
-      <Navbar />
+      <Header />
       <GenreSearch />
       <div>
         <div>

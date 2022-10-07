@@ -1,4 +1,5 @@
 import React from "react";
+import CardDetails from "./CardDetails";
 
 function FilmCard({ film }) {
   const images = {
@@ -18,8 +19,14 @@ function FilmCard({ film }) {
     padding: "0em 1em",
   };
 
+  function handleClick(){
+    return(
+      <CardDetails film={film} />
+    )
+  }
+
   return (
-    <div style={details}>
+    <div style={details} onClick={handleClick}>
       <img style={images} src={film.i.imageUrl} alt={film.l} />
       <h2 style={text}>{film.l} </h2>
       <p style={text}>Category:{film.qid} </p>

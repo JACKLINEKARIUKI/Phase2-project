@@ -1,5 +1,4 @@
 import React from "react";
-import MovieCard from "./MovieCard";
 
 function MyListItems({ items }) {
   return (
