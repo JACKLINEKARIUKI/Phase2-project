@@ -1,25 +1,18 @@
 import React, {useState} from "react";
 import MovieCard from "./MovieCard";
 
-function MoviesList({ movieItems }) {
+function MoviesList({ movies }) {
   const listItems = {
     display: "grid",
-    gridTemplateColumns: "repeat(3, 1fr)",
-    gridGap: "2em",
+    gridTemplateColumns: "repeat(5, 1fr)",
+    gridGap: "1.8em",
   };
 
 
-  // const filterMovies = (e) => {
-  //   const filteredMovies = films.filter((film) => {
-  //     return film.qid === e.target.value;
-  //   });
-  //   setMovies(filteredMovies);
-  // };
-
   return (
     <div style={listItems}>
-      {movieItems.map((movie) => (
-        <MovieCard key={movie.id} film={movie} />
+      {movies.map((movie) => (
+        <MovieCard key={movie.id} movie={movie} />
       ))}
     </div>
   );

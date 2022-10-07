@@ -1,6 +1,6 @@
 import React from "react";
 
-function MovieCard({ movie }) {
+function FilmCard({ film }) {
   const images = {
     width: "16.8vw",
     height: "35vh",
@@ -20,13 +20,13 @@ function MovieCard({ movie }) {
 
   return (
     <div style={details}>
-      <img style={images} src={movie.i.imageUrl} alt={movie.l} />
-      <h2 style={text}>{movie.l} </h2>
-      <p style={text}>Category:{movie.qid} </p>
-      <p style={text}>Genre:{movie.genre} </p>
-      <p style={text}>Rank on IMDB:{movie.rank} </p>
+      <img style={images} src={film.i.imageUrl} alt={film.l} />
+      <h2 style={text}>{film.l} </h2>
+      <p style={text}>Category:{film.qid} </p>
+      <p style={text}>Genre:{film.genre} </p>
+      <p style={text}>Rank on IMDB:{film.rank} </p>
     </div>
   );
 }
 
-export default MovieCard;
+export default FilmCard;

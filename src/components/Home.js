@@ -1,5 +1,4 @@
 import React from "react";
-import { useState, useEffect } from "react";
 import MostPopularList from "./MostPopularList";
 import Reviews from "./Reviews";
 import ListItems from "./ListItems";
@@ -9,6 +8,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 function Home({ films }) {
+
   const homePageColumns = {
     display: "flex",
     justifyContent: "space-between",
@@ -23,7 +23,6 @@ function Home({ films }) {
   //   fontSize: "20px",
   //   padding: "0px 5px",
   // }
-
   return (
     <div>
       <Logo />

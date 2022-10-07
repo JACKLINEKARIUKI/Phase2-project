@@ -11,20 +11,19 @@ import SignUp from "./SignUp";
 import { useFilmsContext } from "../Context/Films";
 
 function App() {
-  const [films, setFilms] = useState([]);
   const [watchList, setWatchList] = useState([]);
   const [user, setUser] = useState(null);
 
-  const {filterFilms} = useFilmsContext()
+  const {filterFilms, allFilms} = useFilmsContext()
 
   return (
     <div>
       <Switch>
         <Route exact path="/movies">
-          <Movies films={filterFilms("movie")} />
+          <Movies movies={filterFilms("movie")} />
         </Route>
         <Route exact path="/series">
-          <Series films={films} />
+          <Series series={filterFilms("tvseries")} />
         </Route>
         <Route exact path="/documentaries">
           <Documentaries />
@@ -39,7 +38,7 @@ function App() {
           <SignUp />
         </Route>
         <Route exact path="/">
-          <Home films={films} />
+          <Home films={allFilms} />
         </Route>
         <Route path="*">
           <h1>404 not found</h1>

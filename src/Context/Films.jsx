@@ -21,7 +21,7 @@ const FilmsProvider = ({ children }) => {
   );
 
   return (
-    <FilmsContext.Provider value={{ filterFilms }}>
+    <FilmsContext.Provider value={{ filterFilms, allFilms: films }}>
       {children}
     </FilmsContext.Provider>
   );

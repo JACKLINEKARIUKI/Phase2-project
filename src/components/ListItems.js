@@ -1,5 +1,5 @@
 import React from "react";
-import MovieCard from "./MovieCard";
+import FilmCard from "./FilmCard";
 
 function ListItems({ films }) {
   const listItems = {
@@ -11,7 +11,7 @@ function ListItems({ films }) {
   return (
     <div style={listItems}>
       {films.map((film) => (
-        <MovieCard key={film.id} film={film} />
+        <FilmCard key={film.id} film={film} />
       ))}
     </div>
   );

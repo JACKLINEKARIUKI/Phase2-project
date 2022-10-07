@@ -6,11 +6,10 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import GenreSearch from "./GenreSearch";
 
-function Movies({ films }) {
-  const [movies, setMovies] = useState(films);
+function Movies({ movies }) {
+  // const [movies, setMovies] = useState(films);
   const [genre, setGenre] = useState("All");
   const [search, setSearch] = useState("");
-
   // const filterMovies = (e) => {
   //   const filteredMovies = films.filter((film) => {
   //     return film.qid === e.target.value;
@@ -24,7 +23,7 @@ function Movies({ films }) {
       <GenreSearch />
       <div>
         <div>
-          <MoviesList movieItems={films} />
+          <MoviesList movies={movies} />
         </div>
       </div>
       <Footer />
