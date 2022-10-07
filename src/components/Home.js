@@ -1,33 +1,41 @@
-import React from 'react'
-import MostPopularList from './MostPopularList'
-import PopularReviews from './PopularReviews'
-import ListItems from './ListItems'
-import Logo from './Logo'
-import Search from './Search'
-import Navbar from './Navbar'
-import Footer from './Footer'
+import React from "react";
+import { useState, useEffect } from "react";
+import MostPopularList from "./MostPopularList";
+import Reviews from "./Reviews";
+import ListItems from "./ListItems";
+import Logo from "./Logo";
+import Search from "./Search";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
-
-function Home() {
-  // const [films, setFilms] = useState([]);
-
-  // useEffect(() => {
-  //   fetch("http://localhost:8000/d")
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       console.log(data);
-  //     });
+function Home({ films }) {
+  const homePageColumns = {
+    display: "flex",
+    justifyContent: "space-between",
+  };
+  const homePageRows = {
+    display: "block",
+    flexDirection: "row",
+    alignItems: "center",
+  };
+  // const headers = {
+  //   color: "white",
+  //   fontSize: "20px",
+  //   padding: "0px 5px",
+  // }
 
   return (
     <div>
       <Logo />
       <Search />
       <Navbar />
-      <div>
-        <ListItems />
+      <div style={homePageColumns}>
         <div>
-          <PopularReviews />
-          <MostPopularList />
+          <ListItems films={films} />
+        </div>
+        <div>
+          <Reviews style={homePageRows} />
+          <MostPopularList style={homePageRows} />
         </div>
       </div>
       <Footer />
@@ -35,4 +43,4 @@ function Home() {
   );
 }
 
-export default Home
+export default Home;
