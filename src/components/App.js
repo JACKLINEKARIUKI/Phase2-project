@@ -9,10 +9,11 @@ import WatchList from "./WatchList";
 import Login from "./Login";
 import SignUp from "./SignUp";
 import { useFilmsContext } from "../Context/Films";
+import CardDetails from "./CardDetails";
 
 function App() {
-  const [watchList, setWatchList] = useState([]);
-  const [user, setUser] = useState(null);
+  // const [watchList, setWatchList] = useState([]);
+  // const [user, setUser] = useState(null);
 
   const {filterFilms, allFilms} = useFilmsContext()
 
@@ -36,6 +37,9 @@ function App() {
         </Route>
         <Route exact path="/signup">
           <SignUp />
+        </Route>
+        <Route exact path="/cardDetails">
+          <CardDetails />
         </Route>
         <Route exact path="/">
           <Home films={allFilms} />

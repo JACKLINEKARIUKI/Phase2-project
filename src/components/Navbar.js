@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const navLinks = {
@@ -7,16 +7,17 @@ function Navbar() {
     justifyContent: "space-between",
     alignItems: "center",
     width: "19%",
-    padding: "0.4vh 7vw",
-    borderRadius: "3px",
+    borderRadius: "5px",
     border: "1px solid white",
     color: "white",
     backgroundColor: "transparent",
     fontSize: "16px",
     fontWeight: "bold",
-    cursor: "pointer",
-    textDecoration: "none",
-    textAlign: "center",
+    alignContent: "left",
+    cursor: "pointer", 
+    active: {
+      backgroundColor: "rgba(94, 151, 255, 0.4)",
+    },
   };
 
   const navbar = {
@@ -31,33 +32,25 @@ function Navbar() {
     backgroundColor: "rgba(94, 151, 255, 0.4)",
   };
 
+
+
   return (
     <div>
       <nav style={navbar}>
         <button style={navLinks}>
-          <Link to="/">
-            Home
-          </Link>
+          <NavLink to="/">Home</NavLink>
         </button>
         <button style={navLinks}>
-          <Link  to="/movies">
-            Movies
-          </Link>
+          <NavLink to="/movies">Movies</NavLink>
         </button>
         <button style={navLinks}>
-          <Link to="/series">
-            Series
-          </Link>
+          <NavLink to="/series">Series</NavLink>
         </button>
         <button style={navLinks}>
-          <Link to="/documentaries">
-            Documentaries
-          </Link>
+          <NavLink to="/documentaries">Documentaries</NavLink>
         </button>
         <button style={navLinks}>
-          <Link to="/watchlist">
-            WatchList
-          </Link>
+          <NavLink to="/watchlist">WatchList</NavLink>
         </button>
       </nav>
       <div style={space}></div>

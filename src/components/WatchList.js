@@ -1,23 +1,23 @@
 import React from "react";
-import ListItems from "./FilmList";
-import Logo from "./Logo";
-import Search from "./Search";
-import Navbar from "./Navbar";
+import Header from "./Header";
 import Footer from "./Footer";
-import GenreSearch from "./GenreSearch";
-import MyListItems from "./MyListItems";
+import FilmList from "./FilmList";
 
-function WatchList(){
+function WatchList({toWatch}) {
+
+    const watchListStyle = {
+      display: "grid",
+      gridTemplateColumns: "repeat(5, 1fr)",
+      gridGap: "1.9em",
+    };
+
   return (
     <div>
-      <Logo />
-      <Search />
-      <Navbar />
-      <MyListItems />
+      <Header />
+      <FilmList watchList={toWatch} listStyle={watchListStyle}/>
       <Footer />
     </div>
   );
-};
+}
 
-
-export default WatchList
+export default WatchList;

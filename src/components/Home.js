@@ -1,5 +1,4 @@
 import React from "react";
-import MostPopularList from "./MostPopularList";
 import Reviews from "./Reviews";
 import FilmList from "./FilmList";
 import Header from "./Header";
@@ -32,7 +31,6 @@ function Home({ films }) {
         </div>
         <div>
           <Reviews style={homePageRows} />
-          <MostPopularList style={homePageRows} />
         </div>
       </div>
       <Footer />

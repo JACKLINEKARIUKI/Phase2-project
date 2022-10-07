@@ -12,8 +12,8 @@ function Movies({ movies }) {
   };
 
   // const [movies, setMovies] = useState(films);
-  const [genre, setGenre] = useState("All");
-  const [search, setSearch] = useState("");
+  // const [genre, setGenre] = useState("All");
+  // const [search, setSearch] = useState("");
   // const filterMovies = (e) => {
   //   const filteredMovies = films.filter((film) => {
   //     return film.qid === e.target.value;

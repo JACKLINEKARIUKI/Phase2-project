@@ -17,10 +17,15 @@ function Reviews() {
     backgroundColor: "rgba(94, 151, 255, 0.4)",
     width: "34vw",
   };
+
+  
+
   function addReview(newReview) {
     const updatedReviews = [...reviews, newReview];
     setReviews(updatedReviews);
   }
+
+
 
   return (
     <div>
