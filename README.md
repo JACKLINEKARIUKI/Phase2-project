@@ -16,17 +16,19 @@
 This is a book store website where one can easily view the genre of books they would like to see, select the books they would like to read and add them to the wish list as well as upload books onto the website.
 
 # Set Up Instruction and Installation
-* Run the following to activate the development environment : 
-            * Yarn run json-server --watch db.json
-            * Open [http://localhost:3000](http://localhost:3000)
-            * Open application "yarn start"
+* Run the following to activate the development environment  
+    * Yarn run json-server --watch db.json
+    * Open [http://localhost:3000](http://localhost:3000)
+    * Open application "yarn start"
 
 * Access to a computer, tablet, Ipad or smart phone.
 * Internet
 * website link.
 
 # Link
-Here is the link to the website (https://jacklinekariuki.github.io/phase1-project/)
+* Here is the link to the application on github (https://jacklinekariuki.github.io/phase2-project/)
+
+* Here is the link to the deployed application on Heroku ()
 
 # Technology Used
 * React JS.
