@@ -1,49 +1,128 @@
-import React, {useState} from "react";
-import { useHistory } from "react-router-dom";
+import React, { useCallback, useEffect, useState } from "react";
+import { useHistory, useParams } from "react-router-dom";
+import Footer from "./Footer";
 import Header from "./Header";
+import Reviews from "./Reviews";
 
-function CardDetails({ film }) {
-const [toWatch, setToWatch] = useState([]);
-const history = useHistory();
-  
-function handleClick(){
-  setToWatch([...toWatch, film])
-  history.push("/watchList", {toWatch})
+const homePageRows = {
+  display: "block",
+  flexDirection: "row",
+  alignItems: "center",
+};
+
+const columnDetails = {
+  display: "flex",
+  justifyContent: "space-between",
+  // backgroundColor: "rgba(94, 151, 255, 0.4)",
+  padding: "1vw 15vw 0vw 2vw",
+  margin: "0px 0px 30px 0px",
+};
+
+const rowDetails = {
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+  alignItems: "left",
+  padding: "1vw 10vw 0vw 2vw",
+  margin: "0px 0px 0px 0px",
 }
 
-// console.log(film)
-    // const { title, description, poster, year, rating } = film;
+const categories = {
+  border: "1px solid white",
+  borderRadius: "8px",
+  padding: "5px 10px",
+  margin: "0px 10px",
+};
+const categoriesContainer = {
+  display: "flex",
+  justifyContent: "space-between",
+
+};
+
+const item={
+  border: "1px solid white",
+  borderRadius: "8px",
+  padding: "20px 50px",
+}
+
+const img={
+  width: "30vw",
+  height: "auto",
+}
+
+const button={
+  border: "1px solid white",
+  borderRadius: "8px",
+  padding: "10px 20px",
+  margin: "0px 10px",
+  width: "30%",
+  cursor: "pointer",
+  textDecoration: "none",
+}
+
+function CardDetails() {
+  const history = useHistory();
+  const { film_id } = useParams();
+  const [film, setFilm] = useState(null);
+
+  useEffect(() => {
+    fetch(`http://localhost:3000/d/${film_id}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setFilm(data);
+      });
+  }, []);
+
+  const addToWatchlist = useCallback(() => {
+    fetch("http://localhost:3000/w", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ ...film }),
+    }).then(() => {
+      history.push("/watchList");
+    });
+  }, [film]);
 
   return (
     <div>
-      {/* <Header /> */}
-      {/* <div>
+      <Header />
+      <div>
         <div>
-          <div>
-            <div>
-              <h1>{film.l}</h1>
-              <div>
-                <h3>Category : {film.qid}</h3>
-                <h3>Genre : {film.genre}</h3>
-              </div>
-              <p>{film.description}</p>
-              <p>Release Year : {film.y}</p>
-              <p>Rank on IMDB : {film.rank}</p>
-              <button>Watch Now</button>
-              <button onClick={handleClick}>Add to Watch List</button>
-            </div>
-            <div>
-              <div>
-                <img src={film.i.imageUrl} alt={film.l} />
-              </div>
-              <div>
-                <h3>Key Cast Members</h3>
-                <p>{film.s}</p>
-              </div>
-            </div>
+          <div style={columnDetails}>
+            {film && (
+              <>
+                <div style={rowDetails}>
+                  <h1 style={item}>{film.l}</h1>
+                  <div style={categoriesContainer}>
+                    <h3 style={categories}>Category : {film.qid}</h3>
+                    <h3 style={categories}>Genre : {film.genre}</h3>
+                  </div>
+                  <h4 style={item}>{film.description}</h4>
+                  <h4 style={item}>Release Year : {film.y}</h4>
+                  <h4 style={item}>Rank on IMDB : {film.rank}</h4>
+                  <button style={button}>Watch Now</button>
+                  <button style={button} onClick={addToWatchlist}>
+                    Add to Watch List
+                  </button>
+                </div>
+                <div>
+                  <div>
+                    <img src={film.i.imageUrl} alt={film.l} style={img} />
+                  </div>
+                  <div>
+                    <h3>Key Cast Members</h3>
+                    <h4>{film.s}</h4>
+                  </div>
+                </div>
+              </>
+            )}
           </div>
         </div>
-      </div> */}
+      </div>
+      <Reviews />
+      <Footer />
     </div>
   );
 }
