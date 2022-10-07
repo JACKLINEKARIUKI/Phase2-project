@@ -8,23 +8,20 @@ import Documentaries from "./Documentaries";
 import WatchList from "./WatchList";
 import Login from "./Login";
 import SignUp from "./SignUp";
+import { useFilmsContext } from "../Context/Films";
 
 function App() {
   const [films, setFilms] = useState([]);
+  const [watchList, setWatchList] = useState([]);
+  const [user, setUser] = useState(null);
 
-  useEffect(() => {
-    fetch("http://localhost:8000/d")
-      .then((res) => res.json())
-      .then((data) => {
-        setFilms(data);
-      });
-  }, []);
+  const {filterFilms} = useFilmsContext()
 
   return (
     <div>
       <Switch>
         <Route exact path="/movies">
-          <Movies films={films} />
+          <Movies films={filterFilms("movie")} />
         </Route>
         <Route exact path="/series">
           <Series films={films} />
