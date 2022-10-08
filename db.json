@@ -35,38 +35,6 @@
     },
     {
       "i": {
-        "height": 3636,
-        "imageUrl": "https://m.media-amazon.com/images/M/MV5BOGM4MTg3Y2MtOWZiMi00YTYzLTkyZjctNjM5ZmUzYWZkMjE3XkEyXkFqcGdeQXVyMTU5OTc2NTk@._V1_.jpg",
-        "width": 2909
-      },
-      "id": "tt7939768",
-      "l": "The Mighty Ducks: Game Changers",
-      "q": "TV series",
-      "qid": "tvSeries",
-      "description": "After failing to make the cut to join the now powerhouse Mighty Ducks junior hockey team, 12-year-old Evan's mother encourages him to form a new team of underdogs with help from Gordon Bombay, the Ducks' original coach.",
-      "genre": "Comedy",
-      "rank": 227,
-      "s": "Luke Islam, Lauren Graham",
-      "y": 2021
-    },
-    {
-      "i": {
-        "height": 1969,
-        "imageUrl": "https://m.media-amazon.com/images/M/MV5BOTgwMzFiMWYtZDhlNS00ODNkLWJiODAtZDVhNzgyNzJhYjQ4L2ltYWdlXkEyXkFqcGdeQXVyNzEzOTYxNTQ@._V1_.jpg",
-        "width": 1321
-      },
-      "id": "tt2084970",
-      "l": "The Imitation Game",
-      "q": "feature",
-      "qid": "movie",
-      "description": "Alan Turing, a British mathematician, joins the cryptography team to decipher the German enigma code. With the help of his fellow mathematicians, he builds a machine to crack the codes.",
-      "genre": "Drama",
-      "rank": 1267,
-      "s": "Benedict Cumberbatch, Keira Knightley",
-      "y": 2014
-    },
-    {
-      "i": {
         "height": 1500,
         "imageUrl": "https://m.media-amazon.com/images/M/MV5BZjBiOGIyY2YtOTA3OC00YzY1LThkYjktMGRkYTNhNTExY2I2XkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg",
         "width": 1013
@@ -96,22 +64,6 @@
       "rank": 3,
       "s": "Morfydd Clark, Ismael Cruz Cordova",
       "y": 2022
-    },
-    {
-      "i": {
-        "height": 1600,
-        "imageUrl": "https://m.media-amazon.com/images/M/MV5BZmE4NDVlMDEtYjg0OS00OTVmLTg3YjItNWE4MjFhZWEzMGUwXkEyXkFqcGdeQXVyNTExODM0NDI@._V1_.jpg",
-        "width": 2500
-      },
-      "id": "tt3581920",
-      "l": "The Last of Us",
-      "q": "TV series",
-      "qid": "tvSeries",
-      "description": "The Last of Us is an American post-apocalyptic drama television series based on the video game series of the same name. The series is set in a post-apocalyptic world where a fungal infection has wiped out most of humanity, and follows a group of survivors who are forced to live in a quarantine zone. The series is produced by HBO and PlayStation Productions, with Craig Mazin serving as showrunner and Neil Druckmann as executive producer.",
-      "genre": "Drama",
-      "rank": 15,
-      "s": "Pedro Pascal, Bella Ramsey",
-      "y": 2023
     },
     {
       "i": {
@@ -147,103 +99,6 @@
     },
     {
       "i": {
-        "height": 1530,
-        "imageUrl": "https://m.media-amazon.com/images/M/MV5BNjVhNTdlMWItMzZhYi00MWZmLTk2NDEtYTczNzBhYzM2ZjMyXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg",
-        "width": 1148
-      },
-      "id": "tt15654262",
-      "l": "Chup",
-      "q": "feature",
-      "qid": "movie",
-      "description": "The film centers on Suresh, a lonely movie director who stumbles into Shanti one evening and casts her as the lead in a film. In a twist of fate, Shanti becomes a superstar and Suresh falls from the upper echelons of the film industry.",
-      "genre": "Thriller",
-      "rank": 71,
-      "s": "Amitabh Bachchan, Pooja Bhatt",
-      "y": 2022
-    },
-    {
-      "i": {
-        "height": 2048,
-        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg",
-        "width": 1382
-      },
-      "id": "tt4154796",
-      "l": "Avengers: Endgame",
-      "q": "feature",
-      "qid": "movie",
-      "description": "After the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
-      "genre": "Sci-Fi",
-      "rank": 334,
-      "s": "Robert Downey Jr., Chris Evans",
-      "y": 2019
-    },
-    {
-      "i": {
-        "height": 1184,
-        "imageUrl": "https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
-        "width": 800
-      },
-      "id": "tt0848228",
-      "l": "The Avengers",
-      "q": "feature",
-      "qid": "movie",
-      "description": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
-      "genre": "Sci-Fi",
-      "rank": 1010,
-      "s": "Robert Downey Jr., Chris Evans",
-      "y": 2012
-    },
-    {
-      "i": {
-        "height": 2048,
-        "imageUrl": "https://m.media-amazon.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_.jpg",
-        "width": 1382
-      },
-      "id": "tt1211837",
-      "l": "Doctor Strange",
-      "q": "feature",
-      "qid": "movie",
-      "description": "While on a journey of physical and spiritual healing, a brilliant neurosurgeon is drawn into the world of the mystic arts.",
-      "genre": "Sci-Fi",
-      "rank": 1071,
-      "s": "Benedict Cumberbatch, Chiwetel Ejiofor",
-      "y": 2016
-    },
-    {
-      "i": {
-        "height": 2500,
-        "imageUrl": "https://m.media-amazon.com/images/M/MV5BNWM0ZGJlMzMtZmYwMi00NzI3LTgzMzMtNjMzNjliNDRmZmFlXkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_.jpg",
-        "width": 1688
-      },
-      "id": "tt9419884",
-      "l": "Doctor Strange in the Multiverse of Madness",
-      "q": "feature",
-      "qid": "movie",
-      "description": "The sequel to Doctor Strange in the Multiverse of Madness where Doctor Strange teams up with a mysterious teenage girl from his dreams who can travel across multiverses, to battle multiple threats, including other-universe versions of himself, which threaten to wipe out millions across the multiverse. ",
-      "genre": "Sci-Fi",
-      "rank": 255,
-      "s": "Benedict Cumberbatch, Elizabeth Olsen",
-      "y": 2022
-    },
-    {
-      "i": {
-        "height": 807,
-        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTc5YTAwMWQtZDBlNS00OTAzLWJlYzYtODVmMTRmYjVhMWE4XkEyXkFqcGdeQXVyMzE4MDkyNTA@._V1_.jpg",
-        "width": 540
-      },
-      "id": "tt3693414",
-      "l": "Doctor Stranger",
-      "q": "TV series",
-      "qid": "tvSeries",
-      "description": "A young doctor flees North Korea for life in the south, where he finds a woman who looks exactly like the woman he lost track of during his escape.",
-      "genre": "k-drama",
-      "rank": 29293,
-      "s": "Lee Jong-Suk, Se-Yeon Jin",
-      "y": 2014,
-      "yr": "2014-2014"
-    },
-    {
-      "i": {
         "height": 443,
         "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTI1NDMyMjExOF5BMl5BanBnXkFtZTcwOTc4MjQzMQ@@._V1_.jpg",
         "width": 300
@@ -273,22 +128,6 @@
       "rank": 24,
       "s": "Tom Cruise, Jennifer Connelly",
       "y": 2022
-    },
-    {
-      "i": {
-        "height": 2048,
-        "imageUrl": "https://m.media-amazon.com/images/M/MV5BMTQzMTU1NzQwNl5BMl5BanBnXkFtZTcwNDg4NzMzMw@@._V1_.jpg",
-        "width": 1382
-      },
-      "id": "tt1046173",
-      "l": "G.I. Joe: The Rise of Cobra",
-      "q": "feature",
-      "qid": "movie",
-      "description": "An elite military unit comprised of special operatives known as G.I. Joe, operating out of The Pit, takes on an evil organization led by a notorious arms dealer.",
-      "genre": "Action",
-      "rank": 4262,
-      "s": "Dennis Quaid, Channing Tatum",
-      "y": 2009
     },
     {
       "i": {
@@ -403,23 +242,6 @@
       "s": "Jared Padalecki, Jensen Ackles",
       "y": 2005,
       "yr": "2005-2020"
-    },
-    {
-      "i": {
-        "height": 1333,
-        "imageUrl": "https://m.media-amazon.com/images/M/MV5BNjRiYTIzZmUtMTFkNS00ZTM0LWE4ODAtMDliMGE4NzM5ZjVlXkEyXkFqcGdeQXVyNDQ0MTYzMDA@._V1_.jpg",
-        "width": 1080
-      },
-      "id": "tt2661044",
-      "l": "The 100",
-      "q": "TV series",
-      "qid": "tvSeries",
-      "description": "Set 97 years after a nuclear war has destroyed civilization, when a spaceship housing humanity's lone survivors sends 100 juvenile delinquents back to Earth in hopes of possibly re-populating the planet.",
-      "genre": "Drama",
-      "rank": 415,
-      "s": "Eliza Taylor, Bob Morley",
-      "y": 2014,
-      "yr": "2014-2020"
     }
   ],
   "w": [
@@ -439,22 +261,6 @@
       "s": "Emilia Clarke, Peter Dinklage",
       "y": 2011,
       "yr": "2011-2019"
-    },
-    {
-      "i": {
-        "height": 2048,
-        "imageUrl": "https://m.media-amazon.com/images/M/MV5BYWE3MDVkN2EtNjQ5MS00ZDQ4LTliNzYtMjc2YWMzMDEwMTA3XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_.jpg",
-        "width": 1382
-      },
-      "id": "tt10919420",
-      "l": "Squid Game",
-      "q": "TV series",
-      "qid": "tvSeries",
-      "description": "Hundreds of cash-strapped players accept a strange invitation to compete in children's games. Inside, a tempting prize awaits - with deadly high stakes.",
-      "genre": "Thriller",
-      "rank": 346,
-      "s": "Lee Jung-jae, Park Hae-soo",
-      "y": 2021
     },
     {
       "i": {
