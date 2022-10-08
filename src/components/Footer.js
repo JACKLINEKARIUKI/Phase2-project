@@ -43,44 +43,44 @@ function Footer() {
     <div>
       <div style={footerRowLinks}>
         <div style={footerColumnLinks}>
-          <a style={links} href="#">
+          <a style={links} href="/">
             About Us
           </a>
-          <a style={links} href="#">
+          <a style={links} href="/">
             News
           </a>
         </div>
         <div style={footerColumnLinks}>
-          <a style={links} href="#">
+          <a style={links} href="/">
             Terms of Use
           </a>
-          <a style={links} href="#">
+          <a style={links} href="/">
             Privacy Policy
           </a>
         </div>
         <div style={footerColumnLinks}>
-          <a style={links} href="#">
+          <a style={links} href="/">
             Contact Us
           </a>
-          <a style={links} href="#">
+          <a style={links} href="/">
             FAQ
           </a>
         </div>
         <div style={footerColumnLinks}>
-          <a style={links} href="#">
+          <a style={links} href="/">
             Follow Us
           </a>
           <div style={links}>
-            <a href="#">
+            <a href="/">
               <FontAwesomeIcon icon={faFacebook} style={icons} />
             </a>
-            <a href="#">
+            <a href="/">
               <FontAwesomeIcon icon={faTwitter} style={icons} />
             </a>
-            <a href="#">
+            <a href="/">
               <FontAwesomeIcon icon={faInstagram} style={icons} />
             </a>
-            <a href="#">
+            <a href="/">
               <FontAwesomeIcon icon={faYoutube} style={icons} />
             </a>
           </div>

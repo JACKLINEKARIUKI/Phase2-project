@@ -1,5 +1,5 @@
-import React, { useCallback } from "react";
-import { NavLink, useHistory } from "react-router-dom";
+import React from "react";
+import { NavLink} from "react-router-dom";
 
 const navLinks = {
   display: "flex",
@@ -32,13 +32,7 @@ const space = {
 };
 
 function Navbar() {
-  // const history = useHistory();
-  // const handleClick = useCallback(
-  //   (string) => {
-  //     history.push(string);
-  //   },
-  //   [history]
-  // );
+
 
   return (
     <div>

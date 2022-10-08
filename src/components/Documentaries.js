@@ -25,7 +25,7 @@ function Documentaries({ documentaries }) {
   );
   return (
     <div>
-      <Header setSearchTerm={setSearchTerm} /> <GenreSearch />
+      <Header setSearchTerm={setSearchTerm} /> 
       <GenreSearch />
       <div>
         <div>

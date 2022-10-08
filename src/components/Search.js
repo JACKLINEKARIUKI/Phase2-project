@@ -17,12 +17,6 @@ const input = {
   fontSize: "15px",
 };
 
-const options = {
-  background: "rgba(255, 255, 255, 0.2)",
-  border: "1px solid rgba(255, 255, 255, 0.5)",
-  color: "black",
-  fontSize: "15px",
-};
 
 function Search({  setSearchTerm }) {
   const [searchTerm, setSearch] = useState("");

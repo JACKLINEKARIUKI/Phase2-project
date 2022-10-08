@@ -24,13 +24,10 @@ const options = {
 };
 
 function GenreSearch() {
-  function handleSearch() {
-    console.log("searching");
-  }
 
   return (
     <div style={genreStyle}>
-      <select name="genre" id="genre" onChange={handleSearch} style={input}>
+      <select name="genre" id="genre" style={input}>
         <option value="" style={options}></option>
         <option value="action" style={options}>
           Action
