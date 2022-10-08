@@ -2,34 +2,37 @@
 
 #### By Jackline Waithira Kariuki
 
-
 ## Table of Contents
-* [Description](#description)
-* [Set Up Instruction and Installation](#set-up-instruction-and-installation)
-* [Link](#link)
-* [Technology Used](#technology-used)
-* [Licence](#licence)
-* [Author's Info](#author's-info)
+
+- [Description](#description)
+- [Set Up Instruction and Installation](#set-up-instruction-and-installation)
+- [Link](#link)
+- [Technology Used](#technology-used)
+- [Licence](#licence)
+- [Author's Info](#author's-info)
 
 # Description
 
 This is a movies and series application wherein the user is able to view available movies/series and select those that they want to watch directly or add to their watch list.
 
 # Set Up Instruction and Installation
-* Run the following to activate the development environment  
+
+- Run the following to activate the development environment
+
 1. Yarn run json-server --watch db.json
-2. Open [http://localhost:3000](http://localhost:3000)
+2. Open [https://my-json-server.typicode.com/JACKLINEKARIUKI/phase2-server](https://my-json-server.typicode.com/JACKLINEKARIUKI/phase2-server)
 3. Open application "yarn start"
 
-
 # Link
-* Here is the link to the application on github (https://jacklinekariuki.github.io/phase2-project/)
 
-* Here is the link to the deployed application on Heroku (https://phase2-project-app.herokuapp.com/)
+- Here is the link to the application on github (https://jacklinekariuki.github.io/phase2-project/)
+
+- Here is the link to the deployed application on Heroku (https://phase2-project-app.herokuapp.com/)
 
 # Technology Used
-* React JS.
-* JSON server
+
+- React JS.
+- JSON server
 
 # Licence
 
@@ -56,9 +59,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 # Author's Info
+
 Email - <jwaithira71@gmail.com>
 
-
 [Go Back to the Top](#phase2-project)
-
-

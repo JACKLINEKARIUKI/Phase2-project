@@ -4,7 +4,6 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Reviews from "./Reviews";
 
-
 const columnDetails = {
   display: "flex",
   justifyContent: "space-between",
@@ -19,7 +18,7 @@ const rowDetails = {
   alignItems: "left",
   padding: "1vw 10vw 0vw 2vw",
   margin: "0px 0px 0px 0px",
-}
+};
 
 const categories = {
   border: "1px solid white",
@@ -30,21 +29,20 @@ const categories = {
 const categoriesContainer = {
   display: "flex",
   justifyContent: "space-between",
-
 };
 
-const item={
+const item = {
   border: "1px solid white",
   borderRadius: "8px",
   padding: "20px 50px",
-}
+};
 
-const img={
+const img = {
   width: "30vw",
   height: "auto",
-}
+};
 
-const button={
+const button = {
   border: "1px solid white",
   borderRadius: "8px",
   padding: "10px 20px",
@@ -52,7 +50,7 @@ const button={
   width: "30%",
   cursor: "pointer",
   textDecoration: "none",
-}
+};
 
 function CardDetails() {
   const history = useHistory();
@@ -60,7 +58,9 @@ function CardDetails() {
   const [film, setFilm] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/d/${film_id}`)
+    fetch(
+      `https://my-json-server.typicode.com/JACKLINEKARIUKI/phase2-server/d/${film_id}`
+    )
       .then((res) => res.json())
       .then((data) => {
         setFilm(data);
@@ -68,13 +68,16 @@ function CardDetails() {
   }, []);
 
   const addToWatchlist = useCallback(() => {
-    fetch("http://localhost:3000/w", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ ...film }),
-    }).then(() => {
+    fetch(
+      "https://my-json-server.typicode.com/JACKLINEKARIUKI/phase2-server/w",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ ...film }),
+      }
+    ).then(() => {
       history.push("/watchList");
     });
   }, [film]);

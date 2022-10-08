@@ -13,7 +13,7 @@ function WatchList() {
   const [watchList, setWatchList] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/w")
+    fetch("https://my-json-server.typicode.com/JACKLINEKARIUKI/phase2-server/w")
       .then((res) => res.json())
       .then((data) => {
         setWatchList(data);
