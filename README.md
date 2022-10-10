@@ -18,7 +18,7 @@ This is a movies and series application wherein the user is able to view availab
 # Set Up Instruction and Installation
 * Run the following to activate the development environment  
 1. Yarn run json-server --watch db.json
-2. Open [http://localhost:3000](http://localhost:3000)
+2. Open [http://localhost:3000/d](http://localhost:3000/d)
 3. Open application "yarn start"
 
 
