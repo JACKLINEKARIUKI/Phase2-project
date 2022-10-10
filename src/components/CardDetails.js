@@ -4,7 +4,6 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Reviews from "./Reviews";
 
-
 const columnDetails = {
   display: "flex",
   justifyContent: "space-between",
@@ -19,7 +18,7 @@ const rowDetails = {
   alignItems: "left",
   padding: "1vw 10vw 0vw 2vw",
   margin: "0px 0px 0px 0px",
-}
+};
 
 const categories = {
   border: "1px solid white",
@@ -30,29 +29,29 @@ const categories = {
 const categoriesContainer = {
   display: "flex",
   justifyContent: "space-between",
-
 };
 
-const item={
+const item = {
   border: "1px solid white",
   borderRadius: "8px",
   padding: "20px 50px",
-}
+};
 
-const img={
+const img = {
   width: "30vw",
   height: "auto",
-}
+};
 
-const button={
+const button = {
   border: "1px solid white",
   borderRadius: "8px",
   padding: "10px 20px",
   margin: "0px 10px",
-  width: "30%",
+  width: "35%",
   cursor: "pointer",
   textDecoration: "none",
-}
+};
+
 
 function CardDetails() {
   const history = useHistory();
@@ -97,9 +96,14 @@ function CardDetails() {
                   <h4 style={item}>Release Year : {film.y}</h4>
                   <h4 style={item}>Rank on IMDB : {film.rank}</h4>
                   <button style={button}>Watch Now</button>
-                  <button style={button} onClick={addToWatchlist}>
-                    Add to Watch List
-                  </button>
+                  <div>
+                    <button style={button} onClick={addToWatchlist}>
+                      Add to Watch List
+                    </button>
+                    {/* <button style={button} onClick={addToWatchlist}>
+                      Remove from Watch List
+                    </button> */}
+                  </div>
                 </div>
                 <div>
                   <div>
